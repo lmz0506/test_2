@@ -1,0 +1,31 @@
+[project]
+name = "test-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "limz", email = "limz@sunsharing.com.cn" }
+]
+requires-python = ">=3.10.9"
+dependencies = [
+    "dateparser>=1.2.1",
+    "fastapi>=0.115.12",
+    "langchain-community>=0.3.24",
+    "langchain[openai]>=0.3.25",
+    "langgraph>=0.4.5",
+    "loguru>=0.7.3",
+    "mysql-connector-python==9.0",
+    "pandas>=2.2.3",
+    "pymysql>=1.1.1",
+    "redis>=6.1.0",
+    "sse-starlette>=2.3.5",
+    "uvicorn>=0.34.2",
+]
+
+
+[project.scripts]
+test-2 = "test_2:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
